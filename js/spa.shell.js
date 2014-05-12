@@ -11,7 +11,7 @@
 */
 /*global $, spa */
 
-spa.shell = (function ($) {
+spa.shell = (function () {
 	//----- BEGIN MODULE SCOPE VARIABLES -----//
 	var 
 		configMap = {
@@ -126,7 +126,7 @@ spa.shell = (function ($) {
 		);
 		return true;
 		// end retract chat slider
-	}
+	};
 	// End DOM method /toggleChat/
 
 	// Begin DOM method /changeAnchorPart/
@@ -288,4 +288,4 @@ spa.shell = (function ($) {
 	};
 	//----- END PUBLIC METHODS -----//
 
-}(jQuery));
+}());

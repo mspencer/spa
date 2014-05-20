@@ -3,9 +3,9 @@
  * Shell module for SPA
 */
 
-/*jslint			browser : true,		continue : true,
-   devel : true,	 indent : 2,		  maxerr : 50,
-  newcap : true, 	  nomen : true,		plusplus : true,
+/*jslint            browser : true,     continue : true,
+   devel : true,     indent : 2,          maxerr : 50,
+  newcap : true,      nomen : true,     plusplus : true,
   regexp : true,	 sloppy : true,		    vars : false,
    white : true
 */
@@ -271,6 +271,10 @@ spa.shell = (function () {
 		$.uriAnchor.configModule({
 			schema_map: configMap.anchor_schema_map
 		});
+
+		// configure and initialise feature modules
+		spa.chat.configModule({});
+		spa.chat.initModule(jqueryMap.$chat);
 
 		// handle URI anchor change events.
 		// This is done /after/ all feature modules are configured and 
